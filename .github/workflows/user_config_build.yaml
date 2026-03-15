@@ -184,6 +184,16 @@ jobs:
         working-directory: ${{ env.base_dir }}
         run: west update
 
+      - name: Debug PMW3610 driver
+        working-directory: ${{ env.base_dir }}
+        run: |
+          echo "=== PMW3610 directory ==="
+          find zmk-pmw3610-driver -name "module.yml" || echo "No module.yml found"
+          find zmk-pmw3610-driver -name "Kconfig*" || echo "No Kconfig found"
+          ls zmk-pmw3610-driver/
+          echo "=== All fetched modules ==="
+          ls -la
+
       - name: West Zephyr export
         working-directory: ${{ env.base_dir }}
         run: west zephyr-export
