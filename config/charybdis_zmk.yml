@@ -3,7 +3,7 @@ id: charybdis
 name: Charybdis
 type: shield
 url: https://github.com/Bastardkb/Charybdis/
-requires: [pro_micro]
+requires: [nice_nano_v2]
 features:
   - Keys
   - QWERTY
