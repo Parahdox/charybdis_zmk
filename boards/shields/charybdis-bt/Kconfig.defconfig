@@ -11,9 +11,19 @@ config ZMK_SPLIT_BLE_ROLE_CENTRAL
 
 endif
 
+if SHIELD_CHARYBDIS_LEFT
+
+config ZMK_SPLIT_BLE_ROLE_PERIPHERAL
+	default y
+
+endif
+
 if SHIELD_CHARYBDIS_LEFT || SHIELD_CHARYBDIS_RIGHT
 
 config ZMK_SPLIT
 	default y
-	
+
+config ZMK_SPLIT_BLE
+	default y
+
 endif
