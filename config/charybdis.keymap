@@ -187,7 +187,7 @@
 &kp LCTRL       &kp A           &kp S   &kp D      &kp F         &kp G        &kp H      &kp J          &kp K      &kp L    &kp SEMICOLON  &kp APOSTROPHE
 &kp LEFT_SHIFT  &mt LEFT_ALT Z  &kp X   &kp C      &kp V         &kp B        &kp N      &kp M          &kp COMMA  &kp DOT  &kp SLASH      &kp RSHIFT
                                         &kp SPACE  &kp LEFT_GUI  &mo 2        &mo 1      &kp BACKSPACE
-                                                   &mkp RCLK     &mkp LCLK    &kp ENTER
+                                                   &mkp LCLK     &mkp RCLK    &kp ENTER
             >;
 
             label = "QUERTZ";

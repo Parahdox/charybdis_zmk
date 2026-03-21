@@ -54,8 +54,8 @@ layers:
   - NAV-FUN
   - NUMBERS
   - BACK SPACE
-  - R CLK
   - L CLK
+  - R CLK
   - ENTER
   NUMBERS:
   - '`'
