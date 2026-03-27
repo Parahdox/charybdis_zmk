@@ -76,7 +76,7 @@ jobs:
         run: |
           if [ -e zephyr/module.yml ]; then
             new_tmp_dir="${TMPDIR:-/tmp}/zmk-config"
-            export zmk_load_arg=" -DZMK_EXTRA_MODULES='${GITHUB_WORKSPACE};${new_tmp_dir}/zmk-pmw3610-driver;${new_tmp_dir}/zmk-split-peripheral-input-relay;${new_tmp_dir}/zmk-input-behavior-listener'"
+            export zmk_load_arg=" -DZMK_EXTRA_MODULES='${GITHUB_WORKSPACE};${new_tmp_dir}/zmk-pmw3610-driver;${new_tmp_dir}/zmk-input-behavior-listener'"
             mkdir -p "${new_tmp_dir}"
             echo "base_dir=${new_tmp_dir}" >> $GITHUB_ENV
           else
