@@ -13,6 +13,9 @@ manifest:
       remote: badjeff
       revision: main
       path: zmk-pmw3610-driver
+    - name: zmk-split-peripheral-input-relay
+      remote: badjeff
+      revision: main
     - name: zmk-input-behavior-listener
       remote: badjeff
       revision: main
