@@ -75,8 +75,8 @@ jobs:
           snippet: ${{ matrix.snippet }}
         run: |
           if [ -e zephyr/module.yml ]; then
+            export zmk_load_arg=" -DZMK_EXTRA_MODULES='${GITHUB_WORKSPACE}'"
             new_tmp_dir="${TMPDIR:-/tmp}/zmk-config"
-            export zmk_load_arg=" -DZMK_EXTRA_MODULES='${GITHUB_WORKSPACE};${new_tmp_dir}/zmk-pmw3610-driver;${new_tmp_dir}/zmk-input-behavior-listener'"
             mkdir -p "${new_tmp_dir}"
             echo "base_dir=${new_tmp_dir}" >> $GITHUB_ENV
           else
@@ -183,16 +183,6 @@ jobs:
       - name: West Update
         working-directory: ${{ env.base_dir }}
         run: west update
-
-      - name: Debug PMW3610 driver
-        working-directory: ${{ env.base_dir }}
-        run: |
-          echo "=== PMW3610 module.yml contents ==="
-          cat zmk-pmw3610-driver/zephyr/module.yml
-          echo "=== PMW3610 Kconfig contents ==="
-          cat zmk-pmw3610-driver/Kconfig
-          echo "=== West list ==="
-          west list
 
       - name: West Zephyr export
         working-directory: ${{ env.base_dir }}
