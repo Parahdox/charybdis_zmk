@@ -130,7 +130,7 @@
 &trans  &kp F1  &kp F2  &kp F3          &kp F4            &kp F5             &kp F6  &kp F7           &kp F8          &kp F9            &kp F10            &kp F11
 &trans  &trans  &trans  &trans          &trans            &trans             &trans  &trans           &kp UP          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp F12
 &trans  &trans  &trans  &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp C_NEXT         &trans  &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT         &kp BACKSLASH      &trans
-&trans  &trans  &trans  &kp C_VOL_DN    &mo 4             &kp C_VOLUME_UP    &trans  &trans           &trans          &trans            &trans             &trans
+&tog 4  &trans  &trans  &kp C_VOL_DN    &mo 3             &kp C_VOLUME_UP    &trans  &trans           &trans          &trans            &trans             &trans
                         &trans          &trans            &trans             &trans  &kp PRINTSCREEN
                                         &trans            &trans             &trans
             >;

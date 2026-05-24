@@ -96,11 +96,11 @@ layers:
   - RIGHT
   - \
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: '4', h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - VOL DN
-  - '4'
+  - SCROLL
   - VOLUME UP
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -157,6 +157,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -166,8 +167,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -214,7 +214,6 @@ layers:
   - I
   - {t: ▽, type: trans}
   - C
-  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -224,7 +223,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
