@@ -2,7 +2,6 @@
 #include <behaviors/mouse_keys.dtsi>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
@@ -11,7 +10,6 @@
 // };
 
 / {
-
     /* input config for mouse move mode */
 
     trackball_listener {
@@ -28,11 +26,12 @@
     };
 
     /* input config for mouse scroll mode */
+
     trackball_scroll_listener {
         compatible = "zmk,input-behavior-listener";
         device = <&vtrackball>;
         layers = <9>;
-        evt-type = <INPUT_EV_REL>;            
+        evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_MISC>;
         y-input-code = <INPUT_REL_WHEEL>;
         y-invert;
@@ -102,12 +101,12 @@
 
         default_win_layer {
             bindings = <
-&kp ESCAPE      &kp N1          &kp N2  &kp N3     &kp N4        &kp N5       &kp N6     &kp N7         &kp N8     &kp N9   &kp N0         &kp DELETE
-&kp TAB         &kp Q           &kp W   &kp E      &kp R         &kp T        &kp Y      &kp U          &kp I      &kp O    &kp P          &kp EQUAL
-&kp LCTRL       &kp A           &kp S   &kp D      &kp F         &kp G        &kp H      &kp J          &kp K      &kp L    &kp SEMICOLON  &kp APOSTROPHE
-&kp LEFT_SHIFT  &kp Z           &kp X   &kp C      &kp V         &kp B        &kp N      &kp M          &kp COMMA  &kp DOT  &lt 9 SLASH      &kp RSHIFT
-                                        &kp SPACE  &kp LEFT_GUI  &mo 2        &mo 1      &kp BACKSPACE
-                                                   &mkp LCLK     &mkp RCLK    &kp ENTER
+&kp ESCAPE      &kp N1  &kp N2  &kp N3     &kp N4        &kp N5       &kp N6     &kp N7         &kp N8     &kp N9   &kp N0         &kp DELETE
+&kp TAB         &kp Q   &kp W   &kp E      &kp R         &kp T        &kp Y      &kp U          &kp I      &kp O    &kp P          &kp EQUAL
+&kp LCTRL       &kp A   &kp S   &kp D      &kp F         &kp G        &kp H      &kp J          &kp K      &kp L    &kp SEMICOLON  &kp APOSTROPHE
+&kp LEFT_SHIFT  &kp Z   &kp X   &kp C      &kp V         &kp B        &kp N      &kp M          &kp COMMA  &kp DOT  &kp SLASH      &kp RSHIFT
+                                &kp SPACE  &kp LEFT_GUI  &mo 2        &mo 1      &kp BACKSPACE
+                                           &mkp LCLK     &mkp RCLK    &kp ENTER
             >;
 
             label = "QUERTZ";
@@ -115,12 +114,12 @@
 
         win_raise_layer {
             bindings = <
-&kp GRAVE       &trans        &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&bt BT_CLR_ALL  &trans        &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &kp MINUS
-&trans          &trans        &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&bt BT_CLR      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans  &trans  &trans  &trans  &trans
-                                            &trans        &trans        &trans          &trans  &trans
-                                                          &trans        &trans          &trans
+&kp GRAVE       &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2      &bt BT_SEL 3  &bt BT_SEL 4    &trans            &trans        &trans    &trans         &trans           &trans
+&bt BT_CLR_ALL  &trans        &trans        &trans            &trans        &trans          &trans            &kp INSERT    &kp HOME  &kp PAGE_UP    &kp PRINTSCREEN  &kp MINUS
+&kp CAPS        &trans        &trans        &trans            &trans        &trans          &trans            &kp DELETE    &kp END   &kp PAGE_DOWN  &trans           &trans
+&trans          &trans        &trans        &kp K_CALCULATOR  &trans        &trans          &kp LEFT_CONTROL  &kp LEFT_ALT  &trans    &trans         &trans           &trans
+                                            &trans            &trans        &trans          &trans            &trans
+                                                              &trans        &trans          &trans
             >;
 
             label = "NUMBERS";
@@ -128,12 +127,12 @@
 
         win_lower_layer {
             bindings = <
-&trans  &kp F1  &kp F2         &kp F3          &kp F4            &kp F5             &kp F6  &kp F7           &kp F8          &kp F9            &kp F10            &kp F11
-&trans  &trans  &trans         &trans          &trans            &trans             &trans  &trans           &kp UP          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp F12
-&trans  &trans  &kp PAGE_UP    &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp C_NEXT         &trans  &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT         &trans             &kp BACKSLASH
-&trans  &trans  &kp PAGE_DOWN  &kp C_VOL_DN    &trans            &kp C_VOLUME_UP    &trans  &trans           &trans          &trans            &trans             &trans
-                               &trans          &trans            &trans             &trans  &kp PRINTSCREEN
-                                               &trans            &trans             &trans
+&trans  &kp F1  &kp F2  &kp F3          &kp F4            &kp F5             &kp F6  &kp F7           &kp F8          &kp F9            &kp F10            &kp F11
+&trans  &trans  &trans  &trans          &trans            &trans             &trans  &trans           &kp UP          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp F12
+&trans  &trans  &trans  &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp C_NEXT         &trans  &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT         &kp BACKSLASH      &trans
+&trans  &trans  &trans  &kp C_VOL_DN    &mo 4             &kp C_VOLUME_UP    &trans  &trans           &trans          &trans            &trans             &trans
+                        &trans          &trans            &trans             &trans  &kp PRINTSCREEN
+                                        &trans            &trans             &trans
             >;
 
             label = "NAV-FUN";
@@ -150,6 +149,17 @@
             >;
 
             label = "SCROLL";
+        };
+
+        layer_4 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans      &trans     &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp M   &kp E   &trans      &kp F      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp A   &trans  &kp L   &kp ESCAPE  &kp DEL    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp I   &trans  &kp C   &trans      &trans     &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans      &trans     &trans  &trans
+                                &trans      &trans     &trans
+            >;
         };
     };
 };
