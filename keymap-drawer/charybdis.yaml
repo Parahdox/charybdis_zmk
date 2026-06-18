@@ -22,21 +22,21 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - INSERT
-  - HOME
-  - PAGE UP
-  - PRINT SCREEN
-  - '-'
+  - {t: ▽, type: trans}
+  - UP
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - CAPS
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - DELETE
-  - END
-  - PAGE DOWN
+  - '-'
+  - LEFT
+  - DOWN
+  - RIGHT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -79,24 +79,24 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - UP
-  - '['
-  - ']'
+  - INSERT
+  - HOME
+  - PG UP
+  - PSCRN
   - DEV TOOLS
-  - {t: ▽, type: trans}
+  - {t: '4', h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - PREVIOUS
   - PLAY PAUSE
   - NEXT
   - {t: ▽, type: trans}
-  - LEFT
-  - DOWN ARROW
-  - RIGHT
-  - \
+  - DEL
+  - END
+  - PG DN
+  - '['
+  - ']'
   - {t: ▽, type: trans}
-  - {t: '4', h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - VOL DN
@@ -106,7 +106,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - \
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
