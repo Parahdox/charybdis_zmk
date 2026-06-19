@@ -117,7 +117,7 @@
 &kp GRAVE       &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2      &bt BT_SEL 3  &bt BT_SEL 4    &trans            &trans        &trans     &trans        &trans           &trans
 &bt BT_CLR_ALL  &trans        &trans        &trans            &trans        &trans          &trans            &trans        &kp UP     &trans        &trans           &trans
 &kp CAPS        &trans        &trans        &trans            &trans        &trans          &kp MINUS         &kp LEFT      &kp DOWN   &kp RIGHT     &trans           &trans
-&trans          &trans        &trans        &kp C_AL_CALC     &trans        &trans          &kp LEFT_CONTROL  &kp LEFT_ALT  &trans     &trans        &trans           &trans
+&trans          &trans        &trans        &kp K_CALC        &trans        &trans          &kp LEFT_CONTROL  &kp LEFT_ALT  &trans     &trans        &trans           &trans
                                             &trans            &trans        &trans          &trans            &trans
                                                               &trans        &trans          &trans
             >;
