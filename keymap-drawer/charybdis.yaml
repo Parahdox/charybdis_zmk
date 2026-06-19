@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: charybdis}
 layers:
   QUERTZ: [ESCAPE, '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', DELETE, TAB, Q, W, E, R, T, Y, U, I, O, P, '=', LCTRL, A, S, D, F, G, H, J, K, L, ;, '''', LEFT
-      SHIFT, Z, X, C, V, B, N, M, ',', ., /, RSHIFT, SPACE, LEFT GUI, NAV-FUN, NUMBERS, BACK SPACE, L CLK, R CLK, ENTER]
+      SHIFT, Z, X, C, V, B, N, M, ',', ., /, RSHIFT, SPACE, NAV-FUN, LEFT GUI, NUMBERS, BACK SPACE, L CLK, R CLK, ENTER]
   NUMBERS:
   - '`'
   - {t: BT, h: '0'}
@@ -42,7 +42,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - CALCULATOR
+  - CALC
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - LEFT CONTROL
@@ -76,7 +76,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - DEL
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - INSERT
@@ -109,8 +109,8 @@ layers:
   - \
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - M CLK
   - {t: ▽, type: trans}
@@ -166,10 +166,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - M CLK
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
