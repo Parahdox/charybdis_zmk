@@ -135,7 +135,7 @@
                                         &trans            &trans             &trans
             >;
 
-            label = "NAV-FUN";vvbx 
+            label = "NAV-FUN";
         };
 
         scroll_layer {
