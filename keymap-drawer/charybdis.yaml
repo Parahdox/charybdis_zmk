@@ -42,7 +42,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - CALC
+  - CALCULATOR
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - LEFT CONTROL
@@ -78,9 +78,9 @@ layers:
   - {t: ▽, type: trans}
   - DEL
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - INSERT
-  - HOME
+  - '`'
+  - (
+  - )
   - PG UP
   - PSCRN
   - DEV TOOLS
@@ -91,21 +91,21 @@ layers:
   - PLAY PAUSE
   - NEXT
   - {t: ▽, type: trans}
-  - DEL
-  - END
-  - PG DN
   - '['
   - ']'
+  - PG DN
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - VOL DN
   - SCROLL
   - VOLUME UP
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - DELETE
+  - HOME
+  - END
+  - INSERT
   - \
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
