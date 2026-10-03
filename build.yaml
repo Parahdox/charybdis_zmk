@@ -21,7 +21,7 @@ include:
   # QWERTY BT
   - board: nice_nano_v2
     shield: charybdis_left
-    keymap: left_peripheral
+    keymap: qwerty
     format: bt
     artifact-name: charybdis_qwerty_left
   - board: nice_nano_v2
