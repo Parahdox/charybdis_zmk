@@ -18,6 +18,10 @@ jobs:
         with:
           python-version: "3.x"
       - run: python scripts/convert_keymap.py -c q2c --in-path "$GITHUB_WORKSPACE/config/charybdis.keymap"
+      # Left half (split peripheral) builds from a frozen keymap: the keymap only
+      # runs on the right half, and the left firmware broke when built from the
+      # input-processor trackball config. See peripheral/left_peripheral.keymap.
+      - run: cp "$GITHUB_WORKSPACE/peripheral/left_peripheral.keymap" "$GITHUB_WORKSPACE/config/"
 
       - uses: actions/upload-artifact@v4
         with:
