@@ -127,12 +127,12 @@
 
         win_lower_layer {
             bindings = <
-&trans  &kp F1  &kp F2  &kp F3          &kp F4            &kp F5             &kp F6      &kp F7                &kp F8                 &kp F9      &kp F10    &kp F11
-&trans  &trans  &trans  &trans          &kp DEL           &trans             &kp GRAVE   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PG_UP   &kp PSCRN  &kp F12
-&tog 4  &trans  &trans  &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp C_NEXT         &trans      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PG_DN   &trans     &trans
-&trans  &trans  &trans  &kp C_VOL_DN    &mo 3             &kp C_VOLUME_UP    &kp DELETE  &kp HOME              &kp END                &kp INSERT  &kp BSLH   &trans
-                        &trans          &trans            &mo 5              &trans      &mkp MCLK
-                                        &trans            &trans             &trans
+&trans  &kp F1  &kp F2  &kp F3        &kp F4            &kp F5          &kp F6      &kp F7                &kp F8                 &kp F9      &kp F10    &kp F11
+&trans  &trans  &trans  &kp C_PREV    &kp DEL           &kp C_NEXT      &kp GRAVE   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PG_UP   &kp PSCRN  &kp F12
+&tog 4  &kp L   &trans  &kp C_VOL_DN  &kp C_PLAY_PAUSE  &kp C_VOL_UP    &trans      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PG_DN   &trans     &trans
+&trans  &trans  &trans  &kp ENTER     &mo 3             &mkp MCLK       &kp DELETE  &kp HOME              &kp END                &kp INSERT  &kp BSLH   &trans
+                        &trans        &trans            &mo 5           &trans      &mkp MCLK
+                                      &trans            &trans          &trans
             >;
 
             label = "NAV-FUN";

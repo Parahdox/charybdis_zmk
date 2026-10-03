@@ -75,9 +75,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - PREV
   - DEL
-  - {t: ▽, type: trans}
+  - NEXT
   - '`'
   - (
   - )
@@ -85,11 +85,11 @@ layers:
   - PSCRN
   - DEV TOOLS
   - {t: '4', h: toggle}
+  - L
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - PREVIOUS
+  - VOL DN
   - PLAY PAUSE
-  - NEXT
+  - VOL UP
   - {t: ▽, type: trans}
   - '['
   - ']'
@@ -99,9 +99,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - VOL DN
+  - ENTER
   - SCROLL
-  - VOLUME UP
+  - M CLK
   - DELETE
   - HOME
   - END
